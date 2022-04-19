@@ -54,9 +54,5 @@ for v in range (iter):
 
 print (lst_mse)
 
-adms_lr = linear_model.LinearRegression ()
-adms_lr.fit(X, y)
-ypred = adms_lr.predict(X)
-ypred[:10]
-
-print ("MSE: ", mean_squared_error (y, ypred))
+plt.plot (list_W, lst_mse)
+plt.show()
