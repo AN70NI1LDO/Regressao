@@ -46,7 +46,7 @@ lst_W = [] #intercept
 lst_W = np.linspace (interp + dlt, interp - dlt, iterc)
 
 lst_mse = []
-for v in range (iter):
+for v in range (iterc):
   adms_lr.intercept_ = lst_W [v]
   ypred = adms_lr.predict (X2)
   mse = mean_squared_error (y, ypred)
